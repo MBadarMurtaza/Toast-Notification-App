@@ -8,11 +8,29 @@
   </head>
   <body class="bg-[#f7edff]">
     <div class="m-[50px]">
-      <button onclick="showToast()" class="bg-[#333] text-white border-0 outline-0 w-32 h-10 m-[5px] cursor-pointer">Success</button>
-      <button onclick="showToast()" class="bg-[#333] text-white border-0 outline-0 w-32 h-10 m-[5px] cursor-pointer">Error</button>
-      <button onclick="showToast()" class="bg-[#333] text-white border-0 outline-0 w-32 h-10 m-[5px] cursor-pointer">Invalid</button>
+      <button
+        onclick="showToast(event)"
+        class="bg-[#333] text-white border-0 outline-0 w-32 h-10 m-[5px] cursor-pointer"
+      >
+        Success
+      </button>
+      <button
+        onclick="showToast(event)"
+        class="bg-[#333] text-white border-0 outline-0 w-32 h-10 m-[5px] cursor-pointer"
+      >
+        Error
+      </button>
+      <button
+        onclick="showToast(event)"
+        class="bg-[#333] text-white border-0 outline-0 w-32 h-10 m-[5px] cursor-pointer"
+      >
+        Invalid
+      </button>
     </div>
-    <div class="absolute bottom-[30px] right-[30px] flex flex-col overflow-hidden p-5 items-center"></div>
-    
+    <div
+      class="absolute bottom-[30px] right-[30px] flex flex-col overflow-hidden p-5 items-center"
+      id="notification"
+    ></div>
+    <script src="./script.js"></script>
   </body>
 </html>
